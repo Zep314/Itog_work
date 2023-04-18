@@ -1,7 +1,13 @@
+-- Задание 7. Создаем базу данных
+
 DROP DATABASE IF EXISTS human_friends;
 CREATE DATABASE human_friends;
 USE human_friends;
 
+-- Задание 8:
+-- Создать таблицы с иерархией из диаграммы в БД
+
+-- Создаем таблицы
 DROP TABLE IF EXISTS cat;
 CREATE TABLE cat
 (
@@ -95,7 +101,7 @@ CREATE TABLE animal
   PRIMARY KEY (id)
 );
 
-
+-- Создаем связи между таблицами
 ALTER TABLE home_animal ADD CONSTRAINT animal_to_home FOREIGN KEY (id_animal) REFERENCES animal (id) ON DELETE RESTRICT ON UPDATE RESTRICT;
 ALTER TABLE cat ADD CONSTRAINT home_to_cat FOREIGN KEY (id_home) REFERENCES home_animal (id) ON DELETE RESTRICT ON UPDATE RESTRICT;
 ALTER TABLE dog ADD CONSTRAINT home_to_dog FOREIGN KEY (id_home) REFERENCES home_animal (id) ON DELETE RESTRICT ON UPDATE RESTRICT;
@@ -104,7 +110,11 @@ ALTER TABLE camel ADD CONSTRAINT pack_to_camel FOREIGN KEY (id_pack) REFERENCES 
 ALTER TABLE horse ADD CONSTRAINT pack_to_horse FOREIGN KEY (id_pack) REFERENCES pack_animal (id) ON DELETE RESTRICT ON UPDATE RESTRICT;
 ALTER TABLE donkey ADD CONSTRAINT pack_to_donkey FOREIGN KEY (id_pack) REFERENCES pack_animal (id) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
-show tables;
+SHOW TABLES;
+
+-- Задание 9:
+-- Заполнить низкоуровневые таблицы именами(животных), командами
+-- которые они выполняют и датами рождения
 
 INSERT INTO animal (name) VALUES('Мои животные');
 INSERT INTO home_animal (name, id_animal) VALUES ('Комнатные',1),('Уличные',1);
@@ -128,7 +138,7 @@ INSERT INTO camel (name, birthdate, commands, id_pack) VALUES
 	('Лила','2017-06-01','иди стой',2),
 	('Танк','2016-05-28','тяни отдыхай',2);
 
-
+-- Проверка заполнения таблиц данными
 SELECT * FROM animal;
 SELECT * FROM home_animal;
 SELECT * FROM pack_animal;
@@ -139,6 +149,10 @@ SELECT * FROM horse;
 SELECT * FROM camel;
 SELECT * FROM donkey;
 
+-- Задание 10:
+-- Удалить из таблицы верблюдов, т.к. верблюдов решили перевезти в другой
+-- питомник на зимовку. Объединить таблицы лошади, и ослы в одну таблицу.
+
 DELETE FROM camel;
 
 SELECT name, birthdate, commands, id_pack FROM horse
@@ -146,6 +160,12 @@ UNION ALL
 SELECT name, birthdate, commands, id_pack FROM donkey
 ;
 
+-- Задание 11:
+-- Создать новую таблицу “молодые животные” в которую попадут все
+-- животные старше 1 года, но младше 3 лет и в отдельном столбце с точностью
+-- до месяца подсчитать возраст животных в новой таблице
+
+-- Создаем новую таблицу
 DROP TABLE IF EXISTS young_animal;
 CREATE TABLE young_animal
 (
@@ -157,7 +177,7 @@ CREATE TABLE young_animal
   PRIMARY KEY (id)
 );
 
-
+-- Вставляем данные в новую таблицу
 INSERT INTO young_animal (name, birthdate, commands, age_in_months)
 SELECT a.name, a.birthdate, a.commands, TIMESTAMPDIFF(MONTH, a.birthdate, SYSDATE()) as age_in_months FROM (
 	SELECT name, birthdate, commands FROM cat
@@ -175,7 +195,12 @@ SELECT a.name, a.birthdate, a.commands, TIMESTAMPDIFF(MONTH, a.birthdate, SYSDAT
 WHERE TIMESTAMPDIFF(MONTH, a.birthdate, SYSDATE()) BETWEEN 1*12 AND 3*12
 ;
 
+-- Проверка содержимого таблицы
 SELECT * FROM young_animal;
+
+-- Задание 12:
+-- Объединить все таблицы в одну, при этом сохраняя поля, указывающие на
+-- прошлую принадлежность к старым таблицам.
 
 SELECT c.name, c.birthdate, c.commands, h.name as 'type', a.name as animal FROM cat c
 JOIN home_animal h ON h.id = c.id_home
