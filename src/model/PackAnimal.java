@@ -1,13 +1,13 @@
 package model;
 
 public class PackAnimal extends Animal{
-    private String typeAnimal;
+    private String animalType;
 
-    String getTypeAnimal() {
-        return this.typeAnimal;
+    public String getAnimalType() {
+        return this.animalType;
     }
 
-    void setTypeAnimal(String name){
-        this.typeAnimal = name;
+    public void setAnimalType(String name){
+        this.animalType = name;
     }
 }

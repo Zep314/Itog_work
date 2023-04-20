@@ -4,8 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40cfb2cf-1af5-4c82-81df-4ef136747d72" name="Changes" comment="some fixing">
-      <change beforePath="$PROJECT_DIR$/sql_itog.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql_itog.sql" afterDir="false" />
+    <list default="true" id="40cfb2cf-1af5-4c82-81df-4ef136747d72" name="Changes" comment="some fixing5">
+      <change afterPath="$PROJECT_DIR$/Itog_work_log.txt.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Itog_work_log.txt.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Itog_work_log.txt.2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Itog_work_log.txt.3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Itog_work_log.txt.4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/log.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Camel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Counter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Donkey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Hamster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Horse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/HomeAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/HomeAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/PackAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/PackAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,14 +52,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/dima/Work/Java/dz5/Itog_work"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Work\Java\dz5\Itog_work" />
@@ -92,7 +110,35 @@
       <option name="project" value="LOCAL" />
       <updated>1681820678686</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="some fixing2">
+      <created>1681823273004</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681823273004</updated>
+    </task>
+    <task id="LOCAL-00006" summary="some fixing3">
+      <created>1681823352909</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681823352909</updated>
+    </task>
+    <task id="LOCAL-00007" summary="some fixing4">
+      <created>1681823399642</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681823399642</updated>
+    </task>
+    <task id="LOCAL-00008" summary="some fixing5">
+      <created>1681912178020</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1681912178020</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,6 +158,10 @@
     <MESSAGE value="middle1" />
     <MESSAGE value="sql done" />
     <MESSAGE value="some fixing" />
-    <option name="LAST_COMMIT_MESSAGE" value="some fixing" />
+    <MESSAGE value="some fixing2" />
+    <MESSAGE value="some fixing3" />
+    <MESSAGE value="some fixing4" />
+    <MESSAGE value="some fixing5" />
+    <option name="LAST_COMMIT_MESSAGE" value="some fixing5" />
   </component>
 </project>
