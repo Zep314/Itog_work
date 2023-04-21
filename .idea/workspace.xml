@@ -4,25 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40cfb2cf-1af5-4c82-81df-4ef136747d72" name="Changes" comment="some fixing5">
-      <change afterPath="$PROJECT_DIR$/Itog_work_log.txt.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Itog_work_log.txt.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Itog_work_log.txt.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Itog_work_log.txt.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Itog_work_log.txt.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/log.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Camel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Counter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Donkey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Hamster.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Horse.java" afterDir="false" />
+    <list default="true" id="40cfb2cf-1af5-4c82-81df-4ef136747d72" name="Changes" comment="near to end">
+      <change afterPath="$PROJECT_DIR$/src/myexception/NotFullInformationException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Itog_work_log.txt.0" beforeDir="false" afterPath="$PROJECT_DIR$/Itog_work_log.txt.0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Itog_work_log.txt.1" beforeDir="false" afterPath="$PROJECT_DIR$/Itog_work_log.txt.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Itog_work_log.txt.2" beforeDir="false" afterPath="$PROJECT_DIR$/Itog_work_log.txt.2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/my/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/my/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Camel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Camel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Counter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Donkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Donkey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Hamster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Hamster.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/HomeAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/HomeAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Horse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Horse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/PackAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/PackAnimal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/View.java" afterDir="false" />
     </list>
@@ -138,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681912178020</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="near to end">
+      <created>1681999284970</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681999284970</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +167,7 @@
     <MESSAGE value="some fixing3" />
     <MESSAGE value="some fixing4" />
     <MESSAGE value="some fixing5" />
-    <option name="LAST_COMMIT_MESSAGE" value="some fixing5" />
+    <MESSAGE value="near to end" />
+    <option name="LAST_COMMIT_MESSAGE" value="near to end" />
   </component>
 </project>

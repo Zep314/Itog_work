@@ -1,5 +1,5 @@
 package model;
-
+// Класс данных для любого животного, без конкретизации
 public class Animal {
     private String animalClass;
     private String name;
@@ -11,7 +11,7 @@ public class Animal {
     }
     public void setAnimalClass(String name){
         this.animalClass = name;
-    };
+    }
 
     public String getName() {
         return this.name;

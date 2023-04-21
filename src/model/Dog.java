@@ -1,6 +1,6 @@
 package model;
-
-public class Dog extends HomeAnimal{
+// Класс данных для собак
+public class Dog extends HomeAnimal {
     public Dog(String animalClass, String animalType, String animalName, String birthDate, String commands) {
         this.setAnimalClass(animalClass);
         this.setAnimalType(animalType);

@@ -26,7 +26,7 @@ public class View { // Класс вьювер - отображение на э�
         log.warning(string);  // Выводим warning в лог
     }
 
-    public void printHelp() {
+    public void printHelp() {  // Вывод помощи на экран
         this.printInfo("Программа имитирующая работу реестра домашних животных");
         this.printInfo("Список комманд:");
         this.printInfo("q - выход из программы");
@@ -37,24 +37,19 @@ public class View { // Класс вьювер - отображение на э�
         this.printInfo("t - научить новым командам одно животное");
     }
 
-    public int question(String question) {
+    public int question(String question) {  // Задаем вопрос - возвращаем ответ
         Scanner scan = new Scanner(System.in);
-        String inputLine = "";
         this.printInfo(question);
-        inputLine = scan.nextLine();
-        switch (inputLine) {
-            case("1"):
-                return 1;
-            case("2"):
-                return 2;
-            case("3"):
-                return 3;
-            default:
-                return 0;
-        }
+        String inputLine = scan.nextLine();
+        return switch (inputLine) {
+            case ("1") -> 1;
+            case ("2") -> 2;
+            case ("3") -> 3;
+            default -> 0;
+        };
     }
 
-    private void printLine() {
+    private void printLine() {  // Печатаем открывающие и закрывающие строки для таблицы
         this.printInfo(String.format("+%2s+%8s+%15s+%10s+%10s+%10s+%30s+"
                 , "-".repeat(2)
                 , "-".repeat(8)
@@ -65,11 +60,11 @@ public class View { // Класс вьювер - отображение на э�
                 , "-".repeat(30)
                 ));
     }
-    public void printDB(ArrayList<Animal> animalList) {
+    public void printDB(ArrayList<Animal> animalList) {  // печатаем список животных
         if (animalList.size() > 0) {
             int i = 1;
             this.printLine();
-            this.printInfo(String.format("|%2s|%8s|%15s|%10s|%10s|%10s|%30s|"
+            this.printInfo(String.format("|%2s|%8s|%15s|%10s|%10s|%10s|%30s|"  // заголовок таблицы
                     , "#"
                     , "Животное"
                     , "Принадлежность"
@@ -80,7 +75,7 @@ public class View { // Класс вьювер - отображение на э�
             ));
 
             this.printLine();
-            for (Animal animal: animalList) {
+            for (Animal animal: animalList) {  // Тело таблицы
                 this.printInfo(String.format("|%2d|%8s|%15s|%10s|%10s|%10s|%30s|"
                         , i
                         , animal.getClass().getSimpleName()

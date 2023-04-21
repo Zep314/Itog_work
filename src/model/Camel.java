@@ -1,6 +1,6 @@
 package model;
-
-public class Camel extends PackAnimal{
+// Класс данных для верблюдов
+public class Camel extends PackAnimal {
     public Camel(String animalClass, String animalType, String animalName, String birthDate, String commands) {
         this.setAnimalClass(animalClass);
         this.setAnimalType(animalType);

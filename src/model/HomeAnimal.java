@@ -1,6 +1,6 @@
 package model;
-
-public class HomeAnimal extends Animal{
+// Класс данных для домашних животных
+public class HomeAnimal extends Animal {
     private String animalType;
 
     public String getAnimalType() {

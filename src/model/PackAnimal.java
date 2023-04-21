@@ -1,6 +1,6 @@
 package model;
-
-public class PackAnimal extends Animal{
+// Класс данных для вьючных животных
+public class PackAnimal extends Animal {
     private String animalType;
 
     public String getAnimalType() {
